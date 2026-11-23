@@ -1,0 +1,2264 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>FreshBite | Restaurant & Cafe</title>
+
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= HEADER ================= -->
+
+
+
+<header class="header">
+
+
+
+    <div class="container navbar">
+
+
+
+        <a href="#home" class="logo">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            Fresh<span>Bite</span>
+
+        </a>
+
+
+
+        <nav class="nav-links" id="navLinks">
+
+
+
+            <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+
+
+
+            <a href="#about" data-en="About" data-bn="আমাদের সম্পর্কে">About</a>
+
+
+
+            <a href="#menu" data-en="Menu" data-bn="মেনু">Menu</a>
+
+
+
+            <a href="#offers" data-en="Offers" data-bn="অফার">Offers</a>
+
+
+
+            <a href="#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+
+
+
+            <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+
+
+
+        </nav>
+
+
+
+        <div class="header-actions">
+
+
+
+            <!-- Language Switcher -->
+
+
+
+            <div class="language-switcher">
+
+
+
+                <button id="englishBtn"
+
+                    class="lang-btn active"
+
+                    onclick="changeLanguage('en')">
+
+                    EN
+
+                </button>
+
+
+
+                <button id="banglaBtn"
+
+                    class="lang-btn"
+
+                    onclick="changeLanguage('bn')">
+
+                    বাংলা
+
+                </button>
+
+
+
+            </div>
+
+
+
+            <a href="#cart" class="cart-header-btn" aria-label="Open shopping cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span data-en="Cart" data-bn="কার্ট">Cart</span>
+
+                <span class="cart-count" id="cartCount">0</span>
+
+            </a>
+
+
+
+            <a href="#reservation" class="header-btn"
+
+               data-en="Book a Table"
+
+               data-bn="টেবিল বুক করুন">
+
+                Book a Table
+
+            </a>
+
+
+
+            <button class="menu-toggle" id="menuToggle"
+
+                    aria-label="Toggle navigation"
+
+                    aria-expanded="false"
+
+                    onclick="toggleMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</header>
+
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+
+
+<section class="hero" id="home">
+
+
+
+    <div class="hero-overlay"></div>
+
+
+
+    <div class="container hero-content">
+
+
+
+        <span class="hero-tag"
+
+            data-en="WELCOME TO FRESHBITE"
+
+            data-bn="ফ্রেশবাইটে আপনাকে স্বাগতম">
+
+            WELCOME TO FRESHBITE
+
+        </span>
+
+
+
+        <h1
+
+            data-en="Delicious Food <br> <span>Wonderful Moment&#x73;</span>"
+
+            data-bn="সুস্বাদু খাবার <br> <span>আনন্দময় মুহূর্&#x9A4;</span>">
+
+            Delicious Food <br>
+
+            <span>Wonderful Moments</span>
+
+        </h1>
+
+
+
+        <p
+
+            data-en="Discover delicious flavors made with fresh ingredients and lots of love. Enjoy every bite with your family and friends."
+
+            data-bn="সতেজ উপকরণ ও ভালোবাসায় তৈরি সুস্বাদু খাবারের স্বাদ নিন। পরিবার ও বন্ধুদের সঙ্গে উপভোগ করুন প্রতিটি মুহূর্ত।">
+
+            Discover delicious flavors made with fresh ingredients
+
+            and lots of love. Enjoy every bite with your family and friends.
+
+        </p>
+
+
+
+        <div class="hero-buttons">
+
+
+
+            <a href="#menu" class="btn btn-primary">
+
+                <span data-en="Explore Menu" data-bn="মেনু দেখুন">Explore Menu</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <a href="#about" class="btn btn-outline"
+
+               data-en="Discover More"
+
+               data-bn="আরও জানুন">
+
+                Discover More
+
+            </a>
+
+
+
+        </div>
+
+
+
+        <div class="hero-stats">
+
+
+
+            <div>
+
+                <h3>100%</h3>
+
+                <p data-en="Fresh Food" data-bn="সতেজ খাবার">Fresh Food</p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>50+</h3>
+
+                <p data-en="Food Items" data-bn="খাবারের আইটেম">Food Items</p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>4.9</h3>
+
+                <p data-en="Customer Rating" data-bn="কাস্টমার রেটিং">Customer Rating</p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+
+
+<section class="about section-padding" id="about">
+
+
+
+    <div class="container about-grid">
+
+
+
+        <div class="about-image">
+
+
+
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"
+
+                 alt="Restaurant interior">
+
+
+
+            <div class="experience-box">
+
+                <h3>10+</h3>
+
+                <p data-en="Years of Experience"
+
+                   data-bn="বছরের অভিজ্ঞতা">
+
+                    Years of Experience
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="about-content">
+
+
+
+            <span class="section-label"
+
+                data-en="ABOUT OUR RESTAURANT"
+
+                data-bn="আমাদের রেস্টুরেন্ট সম্পর্কে">
+
+                ABOUT OUR RESTAURANT
+
+            </span>
+
+
+
+            <h2
+
+                data-en="We Serve The Best <span>Food Experienc&#x65;</span>"
+
+                data-bn="আমরা পরিবেশন করি সেরা <span>খাবারের অভিজ্ঞত&#x9BE;</span>">
+
+                We Serve The Best <span>Food Experience</span>
+
+            </h2>
+
+
+
+            <p
+
+                data-en="Welcome to FreshBite! We believe that good food brings people together. Our chefs prepare every dish with fresh ingredients, care and passion."
+
+                data-bn="FreshBite-এ স্বাগতম! আমরা বিশ্বাস করি ভালো খাবার মানুষকে একত্রিত করে। আমাদের শেফরা সতেজ উপকরণ, যত্ন ও ভালোবাসা দিয়ে প্রতিটি খাবার তৈরি করেন।">
+
+                Welcome to FreshBite! We believe that good food brings
+
+                people together. Our chefs prepare every dish with
+
+                fresh ingredients, care and passion.
+
+            </p>
+
+
+
+            <div class="about-features">
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <span data-en="Fresh Ingredients"
+
+                          data-bn="সতেজ উপকরণ">
+
+                        Fresh Ingredients
+
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-cheese"></i>
+
+                    <span data-en="Delicious Recipes"
+
+                          data-bn="সুস্বাদু রেসিপি">
+
+                        Delicious Recipes
+
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span data-en="Made With Love"
+
+                          data-bn="ভালোবাসায় তৈরি">
+
+                        Made With Love
+
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span data-en="Best Quality"
+
+                          data-bn="সেরা মান">
+
+                        Best Quality
+
+                    </span>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <a href="#contact" class="btn btn-primary"
+
+               data-en="Learn More"
+
+               data-bn="আরও জানুন">
+
+                Learn More
+
+            </a>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= MENU SECTION ================= -->
+
+
+
+<section class="menu-section section-padding" id="menu">
+
+
+
+    <div class="container">
+
+
+
+        <div class="section-heading">
+
+
+
+            <span class="section-label"
+
+                data-en="OUR POPULAR FOOD"
+
+                data-bn="আমাদের জনপ্রিয় খাবার">
+
+                OUR POPULAR FOOD
+
+            </span>
+
+
+
+            <h2 data-en="Explore Our <span>Delicious Men&#x75;</span>"
+
+                data-bn="দেখে নিন আমাদের <span>সুস্বাদু মেন&#x9C1;</span>">
+
+                Explore Our <span>Delicious Menu</span>
+
+            </h2>
+
+
+
+            <p data-en="Fresh, tasty and carefully prepared just for you."
+
+               data-bn="আপনার জন্য যত্নসহকারে তৈরি সতেজ ও সুস্বাদু খাবার।">
+
+                Fresh, tasty and carefully prepared just for you.
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- Food Category Filter -->
+
+        <div class="menu-filters" aria-label="Food categories">
+
+            <button type="button" class="filter-btn active" data-filter="all"
+
+                    data-en="All" data-bn="সব">All</button>
+
+            <button type="button" class="filter-btn" data-filter="biryani"
+
+                    data-en="Biryani" data-bn="বিরিয়ানি">Biryani</button>
+
+            <button type="button" class="filter-btn" data-filter="burger"
+
+                    data-en="Burger" data-bn="বার্গার">Burger</button>
+
+            <button type="button" class="filter-btn" data-filter="sushi"
+
+                    data-en="Sushi" data-bn="সুশি">Sushi</button>
+
+            <button type="button" class="filter-btn" data-filter="pasta"
+
+                    data-en="Pasta" data-bn="পাস্তা">Pasta</button>
+
+        </div>
+
+
+
+
+
+        <!-- Food Search -->
+
+        <div class="menu-search">
+
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+
+            <input
+
+                type="search"
+
+                id="foodSearch"
+
+                placeholder="Search food..."
+
+                aria-label="Search food"
+
+                data-placeholder-en="Search food..."
+
+                data-placeholder-bn="খাবার খুঁজুন..."
+
+            >
+
+        </div>
+
+
+
+        <p class="no-food-results" id="noFoodResults"
+
+           data-en="Sorry, no matching food found."
+
+           data-bn="দুঃখিত, মিলে যায় এমন কোনো খাবার পাওয়া যায়নি।"
+
+           hidden>
+
+            Sorry, no matching food found.
+
+        </p>
+
+
+
+        <div class="menu-grid">
+
+
+
+            <!-- Food 1 -->
+
+
+
+            <div class="food-card" data-category="biryani" data-id="chicken-biryani" data-name-en="Chicken Biryani" data-name-bn="চিকেন বিরিয়ানি" data-price="250">
+
+
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=85"
+
+                         alt="Chicken Biryani">
+
+                    <span class="food-badge"
+
+                        data-en="Popular"
+
+                        data-bn="জনপ্রিয়">
+
+                        Popular
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="food-details">
+
+
+
+                    <h3 data-en="Chicken Biryani"
+
+                        data-bn="চিকেন বিরিয়ানি">
+
+                        Chicken Biryani
+
+                    </h3>
+
+
+
+                    <p data-en="Delicious aromatic rice with chicken."
+
+                       data-bn="মুরগির মাংস দিয়ে তৈরি সুস্বাদু সুগন্ধি বিরিয়ানি।">
+
+                        Delicious aromatic rice with chicken.
+
+                    </p>
+
+
+
+                    <div class="food-bottom">
+
+                        <strong>৳ ২৫০</strong>
+
+                        <button type="button" class="add-cart-btn" data-en="Add to Cart" data-bn="কার্টে যোগ করুন">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+
+                            <span>Add to Cart</span>
+
+                        </button>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- Food 2 -->
+
+
+
+            <div class="food-card" data-category="burger" data-id="special-burger" data-name-en="Special Burger" data-name-bn="স্পেশাল বার্গার" data-price="180">
+
+
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+
+                         alt="Burger">
+
+                </div>
+
+
+
+                <div class="food-details">
+
+
+
+                    <h3 data-en="Special Burger"
+
+                        data-bn="স্পেশাল বার্গার">
+
+                        Special Burger
+
+                    </h3>
+
+
+
+                    <p data-en="Juicy burger with fresh vegetables and cheese."
+
+                       data-bn="তাজা সবজি ও চিজ দিয়ে তৈরি মজাদার বার্গার।">
+
+                        Juicy burger with fresh vegetables and cheese.
+
+                    </p>
+
+
+
+                    <div class="food-bottom">
+
+                        <strong>৳ ১৮০</strong>
+
+                        <button type="button" class="add-cart-btn" data-en="Add to Cart" data-bn="কার্টে যোগ করুন">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+
+                            <span>Add to Cart</span>
+
+                        </button>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- Food 3 -->
+
+
+
+            <div class="food-card" data-category="sushi" data-id="fresh-sushi" data-name-en="Fresh Sushi" data-name-bn="ফ্রেশ সুশি" data-price="350">
+
+
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=85"
+
+                         alt="Sushi">
+
+                </div>
+
+
+
+                <div class="food-details">
+
+
+
+                    <h3 data-en="Fresh Sushi"
+
+                        data-bn="ফ্রেশ সুশি">
+
+                        Fresh Sushi
+
+                    </h3>
+
+
+
+                    <p data-en="Freshly prepared sushi with delightful flavors."
+
+                       data-bn="অসাধারণ স্বাদে তৈরি তাজা সুশি।">
+
+                        Freshly prepared sushi with delightful flavors.
+
+                    </p>
+
+
+
+                    <div class="food-bottom">
+
+                        <strong>৳ ৩৫০</strong>
+
+                        <button type="button" class="add-cart-btn" data-en="Add to Cart" data-bn="কার্টে যোগ করুন">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+
+                            <span>Add to Cart</span>
+
+                        </button>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- Food 4 -->
+
+
+
+            <div class="food-card" data-category="pasta" data-id="creamy-pasta" data-name-en="Creamy Pasta" data-name-bn="ক্রিমি পাস্তা" data-price="220">
+
+
+
+                <div class="food-image">
+
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85"
+
+                         alt="Pasta">
+
+                </div>
+
+
+
+                <div class="food-details">
+
+
+
+                    <h3 data-en="Creamy Pasta"
+
+                        data-bn="ক্রিমি পাস্তা">
+
+                        Creamy Pasta
+
+                    </h3>
+
+
+
+                    <p data-en="Rich creamy pasta with a special sauce."
+
+                       data-bn="বিশেষ সস দিয়ে তৈরি মজাদার ক্রিমি পাস্তা।">
+
+                        Rich creamy pasta with a special sauce.
+
+                    </p>
+
+
+
+                    <div class="food-bottom">
+
+                        <strong>৳ ২২০</strong>
+
+                        <button type="button" class="add-cart-btn" data-en="Add to Cart" data-bn="কার্টে যোগ করুন">
+
+                            <i class="fa-solid fa-cart-plus"></i>
+
+                            <span>Add to Cart</span>
+
+                        </button>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="center-button">
+
+            <a href="#reservation" class="btn btn-primary"
+
+               data-en="View Full Menu"
+
+               data-bn="সম্পূর্ণ মেনু দেখুন">
+
+                View Full Menu
+
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= SHOPPING CART SECTION ================= -->
+
+
+
+<section class="cart-section section-padding" id="cart">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label" data-en="YOUR ORDER" data-bn="আপনার অর্ডার">YOUR ORDER</span>
+
+            <h2 data-en="Your Shopping <span>Car&#x74;</span>" data-bn="আপনার শপিং <span>কার্&#x99F;</span>">Your Shopping <span>Cart</span></h2>
+
+            <p data-en="Review your selected food items and total amount." data-bn="আপনার পছন্দের খাবার ও মোট মূল্য দেখে নিন।">Review your selected food items and total amount.</p>
+
+        </div>
+
+
+
+        <div class="cart-box">
+
+            <div id="cartItems" class="cart-items" aria-live="polite">
+
+                <p class="cart-empty" data-en="Your cart is empty. Add some delicious food!" data-bn="আপনার কার্ট খালি। পছন্দের খাবার যোগ করুন!">Your cart is empty. Add some delicious food!</p>
+
+            </div>
+
+            <div class="cart-summary">
+
+                <strong data-en="Total" data-bn="সর্বমোট">Total</strong>
+
+                <strong id="cartTotal">৳ ০</strong>
+
+            </div>
+
+            <button type="button" class="btn btn-primary checkout-btn" id="checkoutBtn" disabled data-en="Proceed to Checkout" data-bn="অর্ডার নিশ্চিত করুন">Proceed to Checkout</button>
+
+            <p class="cart-note" id="cartMessage" data-en="Demo cart only — checkout is not connected yet." data-bn="এটি ডেমো কার্ট — অর্ডার পাঠানোর ব্যবস্থা এখনো যুক্ত হয়নি।">Demo cart only — checkout is not connected yet.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= CHECKOUT SECTION ================= -->
+<section class="checkout-section section-padding" id="checkout" hidden>
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-label" data-en="COMPLETE YOUR ORDER" data-bn="আপনার অর্ডার সম্পন্ন করুন">COMPLETE YOUR ORDER</span>
+            <h2 data-en="Customer <span>Checkout</span>" data-bn="কাস্টমার <span>চেকআউট</span>">Customer <span>Checkout</span></h2>
+            <p data-en="Enter your delivery details to review your demo order." data-bn="আপনার ডেলিভারির তথ্য দিয়ে ডেমো অর্ডারটি সম্পন্ন করুন।">Enter your delivery details to review your demo order.</p>
+        </div>
+        <div class="checkout-grid">
+            <form class="checkout-form" id="checkoutForm">
+                <h3 data-en="Delivery Information" data-bn="ডেলিভারির তথ্য">Delivery Information</h3>
+                <label for="customerName" data-en="Full Name" data-bn="সম্পূর্ণ নাম">Full Name</label>
+                <input type="text" id="customerName" name="customerName" autocomplete="name" placeholder="Enter your full name" required>
+                <label for="customerPhone" data-en="Mobile Number" data-bn="মোবাইল নম্বর">Mobile Number</label>
+                <input type="tel" id="customerPhone" name="customerPhone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" pattern="01[0-9]{9}" required>
+                <label for="customerAddress" data-en="Delivery Address" data-bn="ডেলিভারি ঠিকানা">Delivery Address</label>
+                <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="House, road, area, city" required></textarea>
+                <label for="orderNote" data-en="Order Note (Optional)" data-bn="অতিরিক্ত নির্দেশনা (ঐচ্ছিক)">Order Note (Optional)</label>
+                <textarea id="orderNote" name="orderNote" rows="2" placeholder="Any special instructions?"></textarea>
+                <label for="paymentMethod" data-en="Payment Method" data-bn="পেমেন্ট পদ্ধতি">Payment Method</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="cod" data-en="Cash on Delivery" data-bn="ক্যাশ অন ডেলিভারি">Cash on Delivery</option>
+                </select>
+                <button type="submit" class="btn btn-primary form-submit" data-en="Review Demo Order" data-bn="ডেমো অর্ডার নিশ্চিত করুন">Review Demo Order</button>
+                <p class="checkout-message" id="checkoutMessage" aria-live="polite"></p>
+            </form>
+            <div class="checkout-summary">
+                <h3 data-en="Order Summary" data-bn="অর্ডারের সারাংশ">Order Summary</h3>
+                <div id="checkoutOrderItems"></div>
+                <div class="checkout-total">
+                    <span data-en="Total Amount" data-bn="সর্বমোট মূল্য">Total Amount</span>
+                    <strong id="checkoutTotal">৳ ০</strong>
+                </div>
+                <p class="checkout-demo-note" data-en="Demo only: this form does not send or save orders to the restaurant." data-bn="শুধু ডেমো: এই ফর্মের তথ্য রেস্টুরেন্টে পাঠানো বা সংরক্ষণ করা হয় না।">Demo only: this form does not send or save orders to the restaurant.</p>
+                <button type="button" class="text-back-btn" id="backToCart" data-en="← Back to Cart" data-bn="← কার্টে ফিরে যান">← Back to Cart</button>
+            </div>
+        </div>
+        <div class="order-success" id="orderSuccess" hidden aria-live="polite">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3 data-en="Demo Order Reviewed!" data-bn="ডেমো অর্ডার পর্যালোচনা সম্পন্ন!">Demo Order Reviewed!</h3>
+            <p id="orderSuccessText"></p>
+            <button type="button" class="btn btn-primary" id="continueShopping" data-en="Continue Shopping" data-bn="কেনাকাটা চালিয়ে যান">Continue Shopping</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= OFFER SECTION ================= -->
+
+
+
+<section class="offer-section" id="offers">
+
+
+
+    <div class="container offer-content">
+
+
+
+        <span data-en="SPECIAL OFFER"
+
+              data-bn="বিশেষ অফার">
+
+            SPECIAL OFFER
+
+        </span>
+
+
+
+        <h2 data-en="Get 20% OFF <br> On Your First Order!"
+
+            data-bn="প্রথম অর্ডারে <br> পাচ্ছেন ২০% ছাড়!">
+
+            Get 20% OFF <br>
+
+            On Your First Order!
+
+        </h2>
+
+
+
+        <p data-en="Enjoy delicious food at a special price. Don't miss it!"
+
+           data-bn="বিশেষ দামে উপভোগ করুন সুস্বাদু খাবার। সুযোগটি হাতছাড়া করবেন না!">
+
+            Enjoy delicious food at a special price. Don't miss it!
+
+        </p>
+
+
+
+        <a href="#reservation" class="btn btn-primary"
+
+           data-en="Order Now"
+
+           data-bn="এখনই অর্ডার করুন">
+
+            Order Now
+
+        </a>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= GALLERY SECTION ================= -->
+
+
+
+<section class="gallery-section section-padding" id="gallery">
+
+
+
+    <div class="container">
+
+
+
+        <div class="section-heading">
+
+
+
+            <span class="section-label"
+
+                data-en="OUR FOOD GALLERY"
+
+                data-bn="আমাদের খাবারের গ্যালারি">
+
+                OUR FOOD GALLERY
+
+            </span>
+
+
+
+            <h2 data-en="A Look At Our <span>Delicious Worl&#x64;</span>"
+
+                data-bn="দেখে নিন আমাদের <span>সুস্বাদু খাবারের জগ&#x9CE;</span>">
+
+                A Look At Our <span>Delicious World</span>
+
+            </h2>
+
+
+
+            <p data-en="A little taste of what makes FreshBite special."
+
+               data-bn="FreshBite-কে বিশেষ করে তোলে এমন কিছু খাবারের ছবি।">
+
+                A little taste of what makes FreshBite special.
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <div class="gallery-grid">
+
+
+
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Food gallery 1">
+
+
+
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85" alt="Food gallery 2">
+
+
+
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=85" alt="Food gallery 3">
+
+
+
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=85" alt="Food gallery 4">
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= RESERVATION SECTION ================= -->
+
+
+
+<section class="reservation-section section-padding" id="reservation">
+
+
+
+    <div class="container reservation-grid">
+
+
+
+        <div class="reservation-info">
+
+
+
+            <span class="section-label"
+
+                data-en="BOOK YOUR TABLE"
+
+                data-bn="আপনার টেবিল বুক করুন">
+
+                BOOK YOUR TABLE
+
+            </span>
+
+
+
+            <h2 data-en="Enjoy A Wonderful <span>Dining Experienc&#x65;</span>"
+
+                data-bn="উপভোগ করুন <span>চমৎকার খাবারের অভিজ্ঞত&#x9BE;</span>">
+
+                Enjoy A Wonderful <span>Dining Experience</span>
+
+            </h2>
+
+
+
+            <p data-en="Reserve your table and enjoy delicious moments with your loved ones."
+
+               data-bn="আপনার টেবিল বুক করুন এবং প্রিয়জনদের সঙ্গে উপভোগ করুন সুস্বাদু মুহূর্ত।">
+
+                Reserve your table and enjoy delicious moments with your loved ones.
+
+            </p>
+
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <strong data-en="Call Us" data-bn="আমাদের কল করুন">Call Us</strong>
+
+                    <p>+880 1XXX-XXXXXX</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+
+                    <strong data-en="Our Location" data-bn="আমাদের ঠিকানা">Our Location</strong>
+
+                    <p data-en="Dhaka, Bangladesh" data-bn="ঢাকা, বাংলাদেশ">
+
+                        Dhaka, Bangladesh
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <form class="reservation-form" id="reservationForm">
+
+
+
+            <h3 data-en="Make A Reservation"
+
+                data-bn="টেবিল বুকিং ফর্ম">
+
+                Make A Reservation
+
+            </h3>
+
+
+
+            <label for="guestName" data-en="Your Name" data-bn="আপনার নাম">
+
+                Your Name
+
+            </label>
+
+
+
+            <input type="text" id="guestName" name="name"
+
+                   placeholder="Enter your name" required>
+
+
+
+            <label for="guestEmail" data-en="Email Address" data-bn="ইমেইল ঠিকানা">
+
+                Email Address
+
+            </label>
+
+
+
+            <input type="email" id="guestEmail" name="email"
+
+                   placeholder="Enter your email" required>
+
+
+
+            <div class="form-row">
+
+
+
+                <div>
+
+                    <label for="bookingDate" data-en="Date" data-bn="তারিখ">Date</label>
+
+                    <input type="date" id="bookingDate" name="date" required>
+
+                </div>
+
+
+
+                <div>
+
+                    <label for="guestCount" data-en="Guests" data-bn="অতিথি সংখ্যা">Guests</label>
+
+                    <select id="guestCount" name="guests" required>
+
+                        <option value="1">1 Person</option>
+
+                        <option value="2">2 People</option>
+
+                        <option value="3">3 People</option>
+
+                        <option value="4">4 People</option>
+
+                        <option value="5">5 People</option>
+
+                        <option value="6">6 People</option>
+
+                    </select>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary form-submit"
+
+                    data-en="Reserve Now"
+
+                    data-bn="এখনই বুক করুন">
+
+                Reserve Now
+
+            </button>
+
+
+
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+
+
+<section class="contact-section section-padding" id="contact">
+
+
+
+    <div class="container">
+
+
+
+        <div class="section-heading">
+
+
+
+            <span class="section-label"
+
+                data-en="GET IN TOUCH"
+
+                data-bn="যোগাযোগ করুন">
+
+                GET IN TOUCH
+
+            </span>
+
+
+
+            <h2 data-en="We Would Love <span>To Hear From Yo&#x75;</span>"
+
+                data-bn="আমরা <span>আপনার কথা শুনতে আগ্রহ&#x9C0;</span>">
+
+                We Would Love <span>To Hear From You</span>
+
+            </h2>
+
+
+
+            <p data-en="Have a question? Feel free to contact us."
+
+               data-bn="কোনো প্রশ্ন আছে? নির্দ্বিধায় আমাদের সঙ্গে যোগাযোগ করুন।">
+
+                Have a question? Feel free to contact us.
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <div class="contact-cards">
+
+
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3 data-en="Phone Number" data-bn="ফোন নম্বর">Phone Number</h3>
+
+                <p>+880 1XXX-XXXXXX</p>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3 data-en="Email Address" data-bn="ইমেইল ঠিকানা">Email Address</h3>
+
+                <p>hello@freshbite.com</p>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3 data-en="Our Address" data-bn="আমাদের ঠিকানা">Our Address</h3>
+
+                <p data-en="Dhaka, Bangladesh" data-bn="ঢাকা, বাংলাদেশ">
+
+                    Dhaka, Bangladesh
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+
+<footer class="footer">
+
+
+
+    <div class="container footer-content">
+
+
+
+        <div class="footer-brand">
+
+
+
+            <a href="#home" class="logo">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                Fresh<span>Bite</span>
+
+            </a>
+
+
+
+            <p data-en="Good food, great moments and unforgettable memories. Thank you for being with us."
+
+               data-bn="ভালো খাবার, সুন্দর মুহূর্ত এবং স্মরণীয় স্মৃতি। আমাদের সঙ্গে থাকার জন্য ধন্যবাদ।">
+
+                Good food, great moments and unforgettable memories.
+
+                Thank you for being with us.
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+
+
+            <h3 data-en="Quick Links" data-bn="গুরুত্বপূর্ণ লিংক">Quick Links</h3>
+
+
+
+            <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+
+            <a href="#about" data-en="About Us" data-bn="আমাদের সম্পর্কে">About Us</a>
+
+            <a href="#menu" data-en="Our Menu" data-bn="আমাদের মেনু">Our Menu</a>
+
+            <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+
+
+
+        </div>
+
+
+
+        <div class="footer-social">
+
+
+
+            <h3 data-en="Follow Us" data-bn="আমাদের অনুসরণ করুন">Follow Us</h3>
+
+
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+
+
+        <p data-en="© 2026 FreshBite Restaurant. All Rights Reserved."
+
+           data-bn="© ২০২৬ FreshBite Restaurant। সর্বস্বত্ব সংরক্ষিত।">
+
+            © 2026 FreshBite Restaurant. All Rights Reserved.
+
+        </p>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+
+
+<script>
+
+
+
+    let cartReady = false;
+
+
+
+    // Language Change Function
+
+
+
+    function changeLanguage(lang) {
+
+
+
+        const elements = document.querySelectorAll("[data-en]");
+
+
+
+        elements.forEach(function(element) {
+
+
+
+            element.innerHTML = element.getAttribute("data-" + lang);
+
+
+
+        });
+
+
+
+        document.getElementById("englishBtn")
+
+            .classList.toggle("active", lang === "en");
+
+
+
+        document.getElementById("banglaBtn")
+
+            .classList.toggle("active", lang === "bn");
+
+
+
+        document.documentElement.lang = lang;
+
+
+
+        localStorage.setItem("selectedLanguage", lang);
+
+
+
+        // Update food search placeholder
+
+        document.getElementById("foodSearch").placeholder =
+
+            lang === "en" ? "Search food..." : "খাবার খুঁজুন...";
+
+
+
+        // Update form placeholders
+
+        document.getElementById("guestName").placeholder =
+
+            lang === "en" ? "Enter your name" : "আপনার নাম লিখুন";
+
+
+
+        document.getElementById("guestEmail").placeholder =
+
+            lang === "en" ? "Enter your email" : "আপনার ইমেইল লিখুন";
+
+
+
+        document.getElementById("customerName").placeholder =
+            lang === "en" ? "Enter your full name" : "আপনার সম্পূর্ণ নাম লিখুন";
+        document.getElementById("customerPhone").placeholder =
+            lang === "en" ? "e.g. 01XXXXXXXXX" : "যেমন: 01XXXXXXXXX";
+        document.getElementById("customerAddress").placeholder =
+            lang === "en" ? "House, road, area, city" : "বাসা, সড়ক, এলাকা, শহর";
+        document.getElementById("orderNote").placeholder =
+            lang === "en" ? "Any special instructions?" : "বিশেষ কোনো নির্দেশনা আছে?";
+
+        // Update guest options
+
+        const guestOptions = document.querySelectorAll("#guestCount option");
+
+
+
+        const englishGuests = [
+
+            "1 Person", "2 People", "3 People",
+
+            "4 People", "5 People", "6 People"
+
+        ];
+
+
+
+        const banglaGuests = [
+
+            "১ জন", "২ জন", "৩ জন",
+
+            "৪ জন", "৫ জন", "৬ জন"
+
+        ];
+
+
+
+        guestOptions.forEach(function(option, index) {
+
+            option.textContent = lang === "en"
+
+                ? englishGuests[index]
+
+                : banglaGuests[index];
+
+        });
+
+
+
+        if (cartReady) {
+
+            renderCart();
+
+        }
+
+
+
+    }
+
+
+
+
+
+    // Mobile Navigation
+
+
+
+    function toggleMenu() {
+
+
+
+        const nav = document.getElementById("navLinks");
+
+        const toggle = document.getElementById("menuToggle");
+
+
+
+        nav.classList.toggle("show");
+
+
+
+        const isOpen = nav.classList.contains("show");
+
+
+
+        toggle.setAttribute("aria-expanded", isOpen);
+
+
+
+        toggle.innerHTML = isOpen
+
+            ? '<i class="fa-solid fa-xmark"></i>'
+
+            : '<i class="fa-solid fa-bars"></i>';
+
+
+
+    }
+
+
+
+    // Close menu after clicking a link
+
+
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+
+
+        link.addEventListener("click", function() {
+
+
+
+            document.getElementById("navLinks").classList.remove("show");
+
+
+
+            document.getElementById("menuToggle").innerHTML =
+
+                '<i class="fa-solid fa-bars"></i>';
+
+
+
+            document.getElementById("menuToggle")
+
+                .setAttribute("aria-expanded", "false");
+
+
+
+        });
+
+
+
+    });
+
+
+
+
+
+    // Remember selected language
+
+
+
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+
+
+
+    if (savedLanguage === "bn") {
+
+        changeLanguage("bn");
+
+    }
+
+
+
+
+
+
+
+    // Food Category Filter + Search
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    const foodCards = document.querySelectorAll(".food-card");
+
+    const foodSearch = document.getElementById("foodSearch");
+
+    const noFoodResults = document.getElementById("noFoodResults");
+
+
+
+    let selectedCategory = "all";
+
+
+
+    function filterFoods() {
+
+        const searchText = foodSearch.value.trim().toLowerCase();
+
+        let visibleCount = 0;
+
+
+
+        foodCards.forEach(function(card) {
+
+            const cardCategory = card.getAttribute("data-category");
+
+
+
+            // Search in both English and Bangla names/descriptions
+
+            const searchableText = Array.from(
+
+                card.querySelectorAll("h3, p")
+
+            ).map(function(element) {
+
+                return [
+
+                    element.textContent,
+
+                    element.getAttribute("data-en") || "",
+
+                    element.getAttribute("data-bn") || ""
+
+                ].join(" ");
+
+            }).join(" ").toLowerCase();
+
+
+
+            const matchesCategory =
+
+                selectedCategory === "all" ||
+
+                selectedCategory === cardCategory;
+
+
+
+            const matchesSearch =
+
+                searchText === "" ||
+
+                searchableText.includes(searchText);
+
+
+
+            const shouldShow = matchesCategory && matchesSearch;
+
+            card.style.display = shouldShow ? "" : "none";
+
+
+
+            if (shouldShow) {
+
+                visibleCount++;
+
+            }
+
+        });
+
+
+
+        noFoodResults.hidden = visibleCount !== 0;
+
+    }
+
+
+
+    filterButtons.forEach(function(button) {
+
+        button.addEventListener("click", function() {
+
+            selectedCategory = this.getAttribute("data-filter");
+
+
+
+            filterButtons.forEach(function(btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+
+            this.classList.add("active");
+
+            filterFoods();
+
+        });
+
+    });
+
+
+
+    foodSearch.addEventListener("input", filterFoods);
+
+
+
+    // ================= SHOPPING CART =================
+
+
+
+    const cart = {};
+
+    const cartItemsContainer = document.getElementById("cartItems");
+
+    const cartCount = document.getElementById("cartCount");
+
+    const cartTotal = document.getElementById("cartTotal");
+
+    const checkoutBtn = document.getElementById("checkoutBtn");
+
+    const cartMessage = document.getElementById("cartMessage");
+
+    cartReady = true;
+
+
+
+    function formatTaka(amount) {
+
+        const lang = document.documentElement.lang;
+
+        const formatted = amount.toLocaleString(lang === "bn" ? "bn-BD" : "en-US");
+
+        return "৳ " + formatted;
+
+    }
+
+
+
+    function renderCart() {
+
+        const lang = document.documentElement.lang;
+
+        const items = Object.values(cart);
+
+        const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
+
+        const totalPrice = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+
+
+        cartCount.textContent = totalQuantity.toLocaleString(lang === "bn" ? "bn-BD" : "en-US");
+
+        cartTotal.textContent = formatTaka(totalPrice);
+
+        checkoutBtn.disabled = items.length === 0;
+
+
+
+        if (items.length === 0) {
+
+            cartItemsContainer.innerHTML = `<p class="cart-empty">${lang === "bn" ? "আপনার কার্ট খালি। পছন্দের খাবার যোগ করুন!" : "Your cart is empty. Add some delicious food!"}</p>`;
+
+            return;
+
+        }
+
+
+
+        cartItemsContainer.innerHTML = items.map(item => {
+
+            const itemName = lang === "bn" ? item.nameBn : item.nameEn;
+
+            return `
+
+                <div class="cart-item" data-cart-id="${item.id}">
+
+                    <div class="cart-item-info">
+
+                        <strong>${itemName}</strong>
+
+                        <span>${formatTaka(item.price)} × ${item.quantity.toLocaleString(lang === "bn" ? "bn-BD" : "en-US")}</span>
+
+                    </div>
+
+                    <div class="cart-item-actions">
+
+                        <button type="button" class="quantity-btn" data-action="decrease" data-id="${item.id}" aria-label="Decrease quantity">−</button>
+
+                        <span>${item.quantity.toLocaleString(lang === "bn" ? "bn-BD" : "en-US")}</span>
+
+                        <button type="button" class="quantity-btn" data-action="increase" data-id="${item.id}" aria-label="Increase quantity">+</button>
+
+                        <button type="button" class="remove-cart-btn" data-action="remove" data-id="${item.id}" aria-label="Remove item"><i class="fa-solid fa-trash"></i></button>
+
+                    </div>
+
+                </div>`;
+
+        }).join("");
+
+    }
+
+
+
+    document.querySelectorAll(".add-cart-btn").forEach(function(button) {
+
+        button.addEventListener("click", function() {
+
+            const card = this.closest(".food-card");
+
+            const id = card.dataset.id;
+
+
+
+            if (cart[id]) {
+
+                cart[id].quantity += 1;
+
+            } else {
+
+                cart[id] = {
+
+                    id: id,
+
+                    nameEn: card.dataset.nameEn,
+
+                    nameBn: card.dataset.nameBn,
+
+                    price: Number(card.dataset.price),
+
+                    quantity: 1
+
+                };
+
+            }
+
+
+
+            renderCart();
+
+        });
+
+    });
+
+
+
+    cartItemsContainer.addEventListener("click", function(event) {
+
+        const button = event.target.closest("button[data-action]");
+
+        if (!button) return;
+
+
+
+        const id = button.dataset.id;
+
+        const action = button.dataset.action;
+
+        if (!cart[id]) return;
+
+
+
+        if (action === "increase") cart[id].quantity += 1;
+
+        if (action === "decrease") cart[id].quantity -= 1;
+
+        if (action === "remove" || cart[id].quantity <= 0) delete cart[id];
+
+
+
+        renderCart();
+
+    });
+
+
+
+        const checkoutSection = document.getElementById("checkout");
+    const checkoutForm = document.getElementById("checkoutForm");
+    const checkoutOrderItems = document.getElementById("checkoutOrderItems");
+    const checkoutTotal = document.getElementById("checkoutTotal");
+    const orderSuccess = document.getElementById("orderSuccess");
+
+    function renderCheckoutSummary() {
+        const lang = document.documentElement.lang;
+        const items = Object.values(cart);
+        checkoutOrderItems.innerHTML = items.map(function(item) {
+            const name = lang === "bn" ? item.nameBn : item.nameEn;
+            const quantity = item.quantity.toLocaleString(lang === "bn" ? "bn-BD" : "en-US");
+            return `<div class="checkout-order-item"><span>${name} × ${quantity}</span><strong>${formatTaka(item.price * item.quantity)}</strong></div>`;
+        }).join("");
+        const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        checkoutTotal.textContent = formatTaka(total);
+    }
+
+    checkoutBtn.addEventListener("click", function() {
+        if (Object.keys(cart).length === 0) return;
+        renderCheckoutSummary();
+        checkoutSection.hidden = false;
+        orderSuccess.hidden = true;
+        checkoutForm.hidden = false;
+        document.querySelector(".checkout-summary").hidden = false;
+        checkoutSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("backToCart").addEventListener("click", function() {
+        checkoutSection.hidden = true;
+        document.getElementById("cart").scrollIntoView({ behavior: "smooth" });
+    });
+
+    checkoutForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (Object.keys(cart).length === 0) return;
+
+        const lang = document.documentElement.lang;
+        const customer = document.getElementById("customerName").value.trim();
+        const total = Object.values(cart).reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+        checkoutForm.hidden = true;
+        document.querySelector(".checkout-summary").hidden = true;
+        orderSuccess.hidden = false;
+        document.getElementById("orderSuccessText").textContent = lang === "bn"
+            ? `ধন্যবাদ ${customer}! আপনার ডেমো অর্ডারের মোট মূল্য ${formatTaka(total)}। কোনো অর্ডার সার্ভারে পাঠানো হয়নি।`
+            : `Thank you, ${customer}! Your demo order total is ${formatTaka(total)}. No order was sent to a server.`;
+
+        Object.keys(cart).forEach(id => delete cart[id]);
+        renderCart();
+        checkoutForm.reset();
+    });
+
+    document.getElementById("continueShopping").addEventListener("click", function() {
+        checkoutSection.hidden = true;
+        document.querySelector(".checkout-summary").hidden = false;
+        orderSuccess.hidden = true;
+        document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+    });
+
+    renderCart();
+
+
+
+
+
+    // Reservation form demo
+
+
+
+    document.getElementById("reservationForm")
+
+        .addEventListener("submit", function(event) {
+
+
+
+            event.preventDefault();
+
+
+
+            const lang = document.documentElement.lang;
+
+
+
+            document.getElementById("formMessage").textContent =
+
+                lang === "bn"
+
+                ? "ধন্যবাদ! আপনার তথ্য গ্রহণ করা হয়েছে। এটি এখনো ডেমো ফর্ম।"
+
+                : "Thank you! Your information has been received. This is a demo form.";
+
+
+
+            this.reset();
+
+
+
+        });
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
